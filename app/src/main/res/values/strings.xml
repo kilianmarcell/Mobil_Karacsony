@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Karacsony</string>
+    <string name="szamlaloFormatum">%3d nap %02d:%02d:%02d</string>
+</resources>
