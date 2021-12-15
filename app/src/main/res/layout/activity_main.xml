@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:id="@+id/szamlalo"
         android:textSize="30sp"
-        android:textColor="@color/white"
+        android:textColor="#FF0000"
         android:layout_height="wrap_content"
         android:text="@string/szamlaloFormatum"
         app:layout_constraintBottom_toBottomOf="parent"

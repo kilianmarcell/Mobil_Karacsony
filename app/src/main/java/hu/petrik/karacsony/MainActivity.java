@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         if (now.getMonth() == 11 && now.getDate() >= 23) {
             year++;
         }
-        karacsonyDatum = new Date(year, 12, 24);
+        karacsonyDatum = new Date(year, 11, 25);
     }
 
     @Override
@@ -59,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
                 long perc = hatralevoIdo / percMili;
                 hatralevoIdo = hatralevoIdo % percMili;
                 long masodperc = hatralevoIdo / masodpercMili;
+
+                String hatralevoSzoveg = getString(R.string.szamlaloFormatum, nap, ora, perc, masodperc);
+                runOnUiThread(() -> szamlalo.setText(hatralevoSzoveg));
             }
         };
         myTimer.schedule(task, 0, 500);
